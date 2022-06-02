@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: shopping-microservice
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+shopping-microservice:
+  greeting: "QA"
+  default-value: "World"
