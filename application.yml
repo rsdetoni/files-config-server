@@ -8,7 +8,9 @@ spring:
     driverClassName: org.h2.Driver
   jpa:
     spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
-    defer-datasource-initialization: true
+    #    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: none
     show-sql: true
   h2:
     console.enabled: true
