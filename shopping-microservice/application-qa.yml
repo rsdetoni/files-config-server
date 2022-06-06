@@ -12,11 +12,19 @@ spring:
     hibernate:
       ddl-auto: none
     show-sql: true
+  jackson:
+    default-property-inclusion: non-null
+    serialization:
+      fail-on-empty-beans: false
   h2:
     console.enabled: true
     console.path: /h2-console
     console.settings.trace: false 
     spring.h2.console.settings.web-allow-others: false  
+flyway:
+    url: jdbc:h2:mem:cart
+    user: sa
+    password: password
 management:
   endpoints:
     web:
